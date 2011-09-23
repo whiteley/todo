@@ -9,6 +9,7 @@ platform :ruby do
   gem 'mysql2', '~> 0.2.7'
   gem 'sqlite3' 
   gem 'unicorn'
+  gem 'thin'
 end
 
 platforms :jruby do
