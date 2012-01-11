@@ -10,7 +10,7 @@ gem 'rails_autolink'
 platform :ruby do
   #gem 'pg'
   #gem 'sqlite3'
-  gem 'mysql' #gem 'mysql2', '~> 0.3.7'
+  gem 'mysql2', '~> 0.3.7' #gem 'mysql'
   gem 'unicorn'
 end
 
