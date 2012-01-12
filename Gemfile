@@ -10,8 +10,7 @@ gem 'rails_autolink'
 platform :ruby do
   #gem 'pg'
   #gem 'sqlite3'
-  gem 'mysql2','~> 0.2.7'
-  #gem 'mysql2', '~> 0.3.7' doesn't work for 1.8.7 but works for 1.9.2
+  gem 'mysql2', '~> 0.3.7'
   gem 'unicorn'
 end
 
