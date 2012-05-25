@@ -1,15 +1,20 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '3.0.9'
 
-gem 'simple_form', '1.5.1'
 gem 'jquery-rails', '1.0.14'
+gem 'simple_form', '1.5.1'
 
 platform :ruby do
   gem 'mysql2', '~> 0.2.7'
-  gem 'pg', '~> 0.13.2'
-  gem 'sqlite3' 
+end
+
+platform :mri do
   gem 'unicorn'
+end
+
+platform :rbx do
+  gem 'puma'
 end
 
 platforms :jruby do
@@ -20,16 +25,4 @@ platforms :jruby do
   gem 'jdbc-postgres', :require => false
   gem 'trinidad'
   gem 'thor'
-end
-
-group :rbx do
-  gem 'puma'
-end
-
-
-# Bundle gems for the local environment. Make sure to
-# put test-only gems in this group so their generators
-# and rake tasks are available in development mode:
-group :development, :test do
-
 end
